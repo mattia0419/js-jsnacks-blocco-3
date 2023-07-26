@@ -33,9 +33,9 @@
 // }
 
 
-const numbers = [];
+// const numbers = [];
 
-let sum = 0;
+// let sum = 0;
 
 
 
@@ -59,31 +59,47 @@ let sum = 0;
 //         let stop = alert("somma troppo alta");
 //     }
 // }
-let media = 0;
+// let media = 0;
 
-while(sum <= 50){
-    const num = prompt("Inserire un numero :");
-    const numInt = parseInt(num);
+// while(sum <= 50){
+//     const num = prompt("Inserire un numero :");
+//     const numInt = parseInt(num);
     
-    if(numInt > 50){
-        let stop = alert("somma troppo alta");
+//     if(numInt > 50){
+//         let stop = alert("somma troppo alta");
+//     }
+    
+    
+//     else if(sum < 50) {
+//         sum += numInt;
+//         numbers.push(numInt);
+//         const media = sum / numbers.length;
+//         console.log(media);        
+//         console.log(sum);
+//         console.log(numbers);
+//     }
+    
+//     else if(sum >= 50){
+//         let stop = alert("somma troppo alta");
+//     }
+    
+// }
+
+// Trovare gli errori nel seguente codice:
+
+// --------------------------
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
+    for (let i = 0; i < numbers.length - 1; i++) {
+        if (numbers[i] % 2 == 0) {
+            
+            evenNumbers.push(i);
+        }
+        
     }
-    
-    
-    else if(sum < 50) {
-        sum += numInt;
-        numbers.push(numInt);
-        const media = sum / numbers.length;
-        console.log(media);        
-        console.log(sum);
-        console.log(numbers);
-    }
-    
-    else if(sum >= 50){
-        let stop = alert("somma troppo alta");
-    }
-    
-}
+    console.log(evenNumbers);
+
+    // dovrebbe restituire [1,3,5]	
 
 
 
